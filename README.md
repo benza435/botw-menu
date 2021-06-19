@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# A selection menu
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Just a UI for now. ~~Stolen from~~ Inspired by the inventory menu from BOTW.  
+![alt text](https://oyster.ignimgs.com/mediawiki/apis.ign.com/the-legend-of-zelda-hd/7/79/3.jpg?width=640)
 
-## Available Scripts
+- The top row enables sliding left and right through pages.
+- The grid enables the user to selct an item and see more information.
+- The details area on the right shows the selected item with additional information.
+- Top and bottom bar are not relevant at this point.
 
-In the project directory, you can run:
+## First steps:
 
-### `npm start`
+I've hashed together a set of social media icons. Currently I am working on getting these to display correctly in a grid, with an empty area next to them for details later. The 'gallery' component is where the grid lives, and the 'details' component does nothing yet. Both of these componenets are children of the 'Menu' component. This will manage state for both components.  
+Tomorow I need to get a grip on where the images will be stored, and how the app will access them.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Rough plan:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Layout the 3x3 grid correctly, and have the details box update with the name of the icon when I click it.
+2. Add the 'selected' feature to the icons, current idea is to layer a reticule over the icon using z-index.
+3. Show larger icon and description for selected item in details area.
+4. Add another page, any random theme, and ensure changes persist when switching betweeen pages.
+5. Add breadcrumbs style bar at the top to show which page you are on.
+6. Add summary page, showing all selections together in medium detail.
+7. Add sort buttons for menu items
+8. Add support for swiping left/right between pages
+9. add drag to sort... maybe.
