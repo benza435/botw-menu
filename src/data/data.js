@@ -1,3 +1,7 @@
+import facebook from '../img/icons/facebook.png';
+import linkedin from '../img/icons/linkedin.png';
+import instagram from '../img/icons/instagram.png';
+
 const data = [
 	{
 		id: 1,
