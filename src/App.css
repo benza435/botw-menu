@@ -32,8 +32,8 @@
 .logoHole:hover {
 	border-color: rgb(255, 236, 127);
 }
-#logoHole::focus {
-	background: green;
+.logoSelected {
+	background-color: green;
 }
 
 .smallImage {

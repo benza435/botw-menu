@@ -123,6 +123,9 @@ const initial = {
 const Menu = () => {
     const [selected, setSelected] = useState(initial)
 
+	// click a button, change its style to selectedLogo, change all the others back to logoHole
+	const [selectedLogo, setSelectedLogo] = useState(null)
+
 
     return (
         <>
